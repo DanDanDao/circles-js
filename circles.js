@@ -2,8 +2,6 @@ window.onload = function () {
     var canvas = document.getElementById('canvas');
     c = canvas.getContext('2d');
 
-    var text = document.getElementById('text');
-
     var innerWidth = window.innerWidth,
         innerHeight = window.innerHeight,
         TWO_PI = Math.PI * 2,
@@ -25,7 +23,7 @@ window.onload = function () {
         this.color = colorArray[Math.floor(Math.random() * colorArray.length)];
         this.radius = radius;
 
-        // Create function for animte circle
+        // Create function for animate circle
 
         this.update = function () {
             if (this.x + this.radius > innerWidth || this.x - this.radius < 0) {
@@ -36,8 +34,8 @@ window.onload = function () {
                 this.dy = -this.dy;
             }
 
-            this.x += 3 * this.dx;
-            this.y += 3 * this.dy;
+            this.x += 2 * this.dx;
+            this.y += 2 * this.dy;
 
             this.draw();
         };
@@ -63,7 +61,7 @@ window.onload = function () {
         circleArray.push(new Circle(x, y, dx, dy, radius)); // Create new circle
     }
 
-// Function for animte canvas elements
+// Function for animate canvas elements
     function animate() {
         requestAnimationFrame(animate);
         c.clearRect(0, 0, innerWidth, innerHeight);
