@@ -12,7 +12,7 @@ window.onload = function () {
     canvas.height = innerHeight;
 
 // Create multi color circles
-    var colorArray = ['#01D8FE', '#54D169', '#fff290'];
+    var colorArray = ['#FEF25F', '#1AB051', '#1FBAF0', '#EB3C37'];
 
 // Function for creating circle
     function Circle(x, y, dx, dy, radius) {
@@ -44,7 +44,9 @@ window.onload = function () {
         this.draw = function () {
             c.beginPath();
             c.arc(this.x, this.y, this.radius, TWO_PI, false);
+            c.strokeStyle = '#94979B';
             c.fillStyle = this.color;
+            c.stroke();
             c.fill();
             c.closePath();
         };
