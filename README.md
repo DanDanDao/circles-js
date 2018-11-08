@@ -1,3 +1,3 @@
 # circles-js
 
-# Create color-filled circles with javascript
+Create color-filled circles with javascript
