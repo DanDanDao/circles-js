@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a25ad78-8881-4f4e-b8f3-f305fc326fca" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/circles.html" beforeDir="false" afterPath="$PROJECT_DIR$/circles.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/circles.js" beforeDir="false" afterPath="$PROJECT_DIR$/circles.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -46,7 +44,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="106" />
-          <entry key="js" value="198" />
+          <entry key="js" value="248" />
           <entry key="json" value="2" />
           <entry key="php" value="7" />
         </counts>
@@ -55,7 +53,7 @@
         <counts>
           <entry key="HTML" value="106" />
           <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="198" />
+          <entry key="JavaScript" value="248" />
           <entry key="PLAIN_TEXT" value="7" />
         </counts>
       </usages-collector>
@@ -82,8 +80,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/circles.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="45" column="62" lean-forward="true" selection-start-line="45" selection-start-column="62" selection-end-line="45" selection-end-column="62" />
+            <state relative-caret-position="342">
+              <caret line="46" column="36" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -163,12 +161,12 @@
       <updated>1541674477713</updated>
       <workItem from="1541674479735" duration="1349000" />
       <workItem from="1541677085147" duration="22000" />
-      <workItem from="1541677122438" duration="2709000" />
+      <workItem from="1541677122438" duration="2987000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4080000" />
+    <option name="totallyTimeSpent" value="4358000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="68" y="23" width="1372" height="837" extended-state="0" />
@@ -229,8 +227,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/circles.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="45" column="62" lean-forward="true" selection-start-line="45" selection-start-column="62" selection-end-line="45" selection-end-column="62" />
+        <state relative-caret-position="342">
+          <caret line="46" column="36" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
         </state>
       </provider>
     </entry>
