@@ -1,7 +1,40 @@
+:root {
+    --main-bg-color: white;
+    --main-txt-color: black;
+    --main-box-shadow-color: gray;
+    --main-border-color: black;
+}
+
 #color-picker {
     position: absolute;
-    background: white;
-    border: 3px solid black;
+    background: var(--main-bg-color);
+    border: 3px solid var(--main-border-color);
     border-radius: 10px;
     padding: 5px;
+}
+
+.jscolor {
+    width: 100px;
+    height: 22px;
+    border: 1px solid var(--main-border-color);
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 0 0 0 4px;
+    box-shadow: 2px 2px 3px var(--main-box-shadow-color);
+}
+
+#submit-color {
+    min-height: 24px;
+    border: 1px solid var(--main-border-color);
+    width: 50px;
+    border-radius: 5px;
+    font-size: 15px;
+    box-shadow: 2px 2px 3px var(--main-box-shadow-color);
+}
+
+#added-colors {
+}
+
+.color {
+    box-shadow: 2px 2px 3px var(--main-box-shadow-color);
 }
