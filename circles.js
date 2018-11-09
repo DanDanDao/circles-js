@@ -2,8 +2,8 @@ window.onload = function () {
     var canvas = document.getElementById('canvas');
     c = canvas.getContext('2d');
 
-    var innerWidth = window.innerWidth,
-        innerHeight = window.innerHeight,
+    var innerWidth = window.innerWidth - 20,
+        innerHeight = window.innerHeight - 20,
         TWO_PI = Math.PI * 2,
         circleArray = [],
         NumOfCircles = 100;
@@ -12,7 +12,38 @@ window.onload = function () {
     canvas.height = innerHeight;
 
 // Create multi color circles
+//     var colorArray = new Array();
     var colorArray = ['#FFDF40', '#54D169', '#15EDED', '#FF7C6E'];
+
+
+// Function for add colors
+    var params = location.search.replace(/^\?/, '').split('&');
+    for (var i = 0; i < params.length; i += 1) {
+        var key_val = params[i].split('=');
+        if (key_val.length >= 2) {
+            colorArray.splice(colorArray[4],0,"#" + key_val[1]);
+            console.log(colorArray);
+            animate();
+        }
+    }
+
+    for (var i = 0; i < colorArray.length; i += 1) {
+        var btn = document.createElement("BUTTON");
+
+        btn.style.backgroundColor = colorArray[i];
+        btn.style.height = "40px";
+        btn.style.width = "40px";
+        btn.style.margin = "5px";
+        btn.style.border = "1px solid black";
+        btn.style.borderRadius = "5px";
+
+        var addedColors = document.getElementById("added-colors");
+        addedColors.appendChild(btn);
+        btn.onclick = function () {
+            colorArray.splice(0,1);
+            console.log(colorArray);
+        }
+    }
 
 // Function for creating circle
     function Circle(x, y, dx, dy, radius) {
@@ -74,4 +105,5 @@ window.onload = function () {
     }
 
     animate();
+
 }

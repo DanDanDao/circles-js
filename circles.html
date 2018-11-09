@@ -6,8 +6,21 @@
     <link rel="icon" type="image/png" href="images/favicon.ico">
     <link rel="stylesheet" href="circles.css">
     <script src="circles.js"></script>
+    <script src="jscolor.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
+<div id="color-picker">
+    <form>
+        <p>
+            Pick a color to add:
+            <input name="color" class="jscolor">
+            <input type="submit" value="Add">
+        </p>
+    </form>
+    <div id="added-colors"></div>
+</div>
 <canvas id="canvas"></canvas>
 </body>
 </html>
