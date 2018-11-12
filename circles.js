@@ -11,6 +11,7 @@ window.onload = function () {
     canvas.width = innerWidth;
     canvas.height = innerHeight;
 
+
 // Create multi color circles
 //     var colorArray = new Array();
     var colorArray = ['#FFDF40', '#54D169', '#15EDED', '#FF7C6E'];
@@ -77,6 +78,7 @@ window.onload = function () {
             c.arc(this.x, this.y, this.radius, TWO_PI, false);
             c.strokeStyle = 'var(--main-border-color)';
             c.fillStyle = this.color;
+            c.lineWidth = '5'
             c.stroke();
             c.fill();
             c.closePath();
